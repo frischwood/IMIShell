@@ -1,0 +1,30 @@
+# IMIShell - local deployment
+#
+# Requires the SLF VPN on the host for DBO database access.
+
+services:
+  imishell:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: imishell
+    ports:
+      - "8502:8501"
+    volumes:
+      # Persistent storage for run results and drawn ROIs
+      - ./output:/app/output
+      - ./config:/app/config
+    environment:
+      - METEOIO_BIN=/usr/local/bin/meteoio_timeseries
+      - SNOWPACK_BIN=/usr/local/bin/snowpack
+      - IMIS_OUTPUT_DIR=/app/output
+      - IMIS_TEMPLATE_DIR=/app/input/templates
+      - IMIS_META_DIR=/app/input/imis
+      - IMIS_CONFIG_DIR=/app/config
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s

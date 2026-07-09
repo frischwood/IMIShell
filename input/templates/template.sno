@@ -1,0 +1,33 @@
+SMET 1.1 ASCII
+[HEADER]
+station_id       = {{station_id}}
+station_name     = {{station_name}}
+latitude         = {{latitude}}
+longitude        = {{longitude}}
+altitude         = {{altitude}}
+nodata           = {{nodata}}
+tz               = {{tz}}
+source           = {{source}}
+ProfileDate      = 1990-10-01T00:00
+HS_Last = 0.0
+SlopeAngle = 0
+SlopeAzi = 0
+nSoilLayerData = 6
+nSnowLayerData = 0
+SoilAlbedo = 0.2
+BareSoil_z0 = 0.02
+CanopyHeight = 0
+CanopyLeafAreaIndex = 0
+CanopyDirectThroughfall = 0
+WindScalingFactor = 0
+ErosionLevel = 0
+TimeCountDeltaHS = 0
+fields = timestamp Layer_Thick T Vol_Frac_I Vol_Frac_W Vol_Frac_V Vol_Frac_S Rho_S Conduc_S HeatCapac_S rg rb dd sp mk mass_hoar ne CDot metamo
+[DATA]
+1990-10-01T00:00 2 278.15 0.0 0.02 0.01 0.97 2400.0 0.3 900.0 10000 0.0 0.0 0.0 0 0.0 1 0 0
+1990-10-01T00:00 1 278.15 0.0 0.025 0.22859 0.74641 2400.0 0.3 900.0 4096 0.0 0.0 0.0 0 0.0 1 0 0
+1990-10-01T00:00 0.5 278.15 0.0 0.025 0.22859 0.74641 2400.0 0.3 900.0 4096 0.0 0.0 0.0 0 0.0 1 0 0
+1990-10-01T00:00 0.25 278.15 0.0 0.025 0.22859 0.74641 2400.0 0.3 900.0 4096 0.0 0.0 0.0 0 0.0 1 0 0
+1990-10-01T00:00 0.15 278.15 0.0 0.025 0.22859 0.74641 2400.0 0.3 900.0 4096 0.0 0.0 0.0 0 0.0 1 0 0
+1990-10-01T00:00 0.1 278.15 0.0 0.025 0.22859 0.74641 2400.0 0.3 900.0 4096 0.0 0.0 0.0 0 0.0 1 0 0
+

@@ -1,0 +1,14 @@
+# Run results
+output/
+
+# Drawn ROIs
+config/shapefiles/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store

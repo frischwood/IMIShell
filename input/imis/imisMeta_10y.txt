@@ -1,0 +1,130 @@
+# Metadata for IMIS_10_YEARS dataset\
+# Reference        = Adrien Michel, Varun Sharma, Michael Lehning, and Hendrik Huwald, Climate change scenarios\
+#                    at hourly time-step over Switzerland from an enhanced temporal downscaling approach,\
+#                    International Journal of Climatology, 2021, doi:10.1002/joc.7032\
+# Author           = Created by Adrien Michel (adrien.michel@epfl.ch)\
+# Citation         = Michel, A., Sharma, V., Lehning, M. Huwald, H., 2021. Dataset for: Climate change scenarios at hourly time-step over Switzerland from an enhanced temporal downscaling approach. EnviDat. doi:10.16904/envidat.201\
+# Url              = https://www.envidat.ch/dataset/climate-change-scenarios-at-hourly-resolution\
+# Source_code      = https://github.com/Chelmy88/temporal_downscaling, https://www.envidat.ch/dataset/source-code-climate-change-scenarios-at-hourly-resolution, doi:10.16904/envidat.203\
+# License          = https://creativecommons.org/licenses/by/4.0\
+# Info             = Coordinates in CH1903 LV03. 1 in variable name columns indicate if at least one climate change\
+#                    scenarios is available for the given variable. See the paper SM for tables with additional details\
+#\
+  ID                              NAME ELEVATION LONGITUDE  LATITUDE XCOORD YCOORD TA PSUM RH VW\
+ALI1                              ALI1      1989   6.98728  46.48225 565340 147981  1    0  1  0\
+ALI2                   Allieres:Chenau      1708   6.99329  46.48863 565806 148688  1    1  1  1\
+AMD1                              AMD1      1932   9.13559  47.16969 728647 225694  1    0  1  0\
+AMD2                  Amden:Baerenfall      1610   9.14688  47.17084 729500 225840  1    1  1  0\
+ANV1                              ANV1      2895   7.58666  46.15076 611436 111042  1    0  1  1\
+ANV2                 Anniviers:Orzival      2640   7.53536  46.18827 607468 115206  1    1  1  1\
+ANV3                 Anniviers:Tracuit      2589   7.65639  46.12116 616833 107764  1    1  1  1\
+ARO1                              ARO1      3300   7.43528  46.03537 599740  98203  1    0  1  1\
+ARO2            Arolla:Les_Fontanesses      2847   7.44584  46.02878 600558  97471  1    1  1  1\
+ARO3                     Arolla:Breona      2602   7.56205  46.08742 609546 103997  1    1  1  1\
+BED2                  Bedretto:Cavanna      2450   8.51079  46.53404 682250 154200  1    1  1  1\
+BED3               Bedretto:Cassinello      2101   8.52191  46.49115 683169 149445  1    1  1  1\
+BER1                              BER1      2956  10.02363  46.43148 798654 145510  1    0  1  0\
+BER2              Bernina:Motta_Bianco      2447  10.02919  46.42057 799121 144312  1    0  1  1\
+BER3                 Bernina:Puoz_Bass      2625   9.91588  46.44091 790343 146291  1    0  1  1\
+BEV1                              BEV1      2490   9.85353  46.54885 785184 158135  1    0  1  1\
+BEV2                     Bever:Valetta      2512   9.83709  46.53956 783955 157064  1    1  1  1\
+BOG1                              BOG1      2688   8.46004  46.32826 678655 131275  1    0  1  0\
+BOR2               Bortel:Bortelseewji      2517    8.1093  46.29052 651682 126789  1    1  1  0\
+BOV2          Boveire:Pointe_de_Toules      2687   7.23719  45.98479 584389  92601  1    1  1  1\
+CAM1                              CAM1      2668   8.70038  46.48269 696885 148709  1    0  1  0\
+CAM2                Campolungo:Fontane      2216   8.71747  46.46572 698228 146844  1    1  1  1\
+CHA1                              CHA1      2540   7.15245   46.3829 577983 136877  1    0  0  0\
+CHA2           Chaussy:Pierres_Fendues      2218   7.16398  46.37696 578868 136214  1    1  1  1\
+CON2       Conthey:Etang_de_Trente_Pas      2229    7.2742  46.28974 587328 126494  1    1  1  1\
+DAV1                              DAV1      2890   9.81431  46.68851 781707 173561  1    0  1  1\
+DAV2                Davos:Baerentaelli      2558   9.81941  46.69889 782062 174726  1    1  1  1\
+DAV3                 Davos:Hanengretji      2455   9.77399  46.78883 778292 184616  1    1  1  1\
+DAV4                 Davos:Frauentobel      2330    9.7847  46.78419 779125 184125  1    1  1  1\
+DTR1                              DTR1      2388   8.86609  46.54806 709476 156193  1    0  1  0\
+DTR2                      Doetra:Preda      2057   8.86906  46.54286 709714 155619  1    1  0  1\
+ELM1                              ELM1      2447   9.12057  46.93147 728076 199192  1    0  1  1\
+ELM2                 Elm:Chueebodensee      2058    9.1365   46.9356 729279 199678  1    1  1  1\
+FIR2         First:Schmidigen-Bidmeren      2111    8.0644  46.66877 647887 168807  1    1  1  1\
+FLU2              Fluela:Fluela_Hospiz      2394   9.94644  46.75271 791582 181009  1    1  1  1\
+FNH1                              FNH1      2785   6.96996  46.12072 563770 107800  1    0  0  0\
+FNH2              Finhaut:L'Ecreuleuse      2252   6.96409  46.10076 563303 105584  1    1  0  1\
+FOU1                              FOU1      3344   7.05598  45.99151 570350  93400  0    0  1  0\
+FRA2                       Frasco:Efra      2100   8.85318  46.33823 708906 132853  1    1  1  1\
+FRA3                      Frasco:Costa      2170   8.81811  46.35195 706180 134330  1    0  1  1\
+FUL1                              FUL1      2899   7.11302  46.17868 574856 114187  1    0  1  0\
+FUL2                   Fully:Grand_Cor      2602   7.08965  46.19468 573059 115974  1    1  1  1\
+GAD2              Gadmen:Gschletteregg      2063   8.39749  46.74418 673273 177447  1    1  1  0\
+GAN1                              GAN1      3193   7.76625  46.43968 625177 143201  1    0  0  0\
+GAN2             Gandegg:Schneestation      2710    7.7606  46.42926 624748 142041  1    1  1  0\
+GLA1                              GLA1      2909   8.99872  46.99872 718650 206475  0    0  1  0\
+GLA2                 Glaernisch:Guppen      1632  9.037583 46.996625 721610 206302  1    1  1  0\
+GOM1                              GOM1      2728   8.24204  46.42145 661762 141439  1    0  1  0\
+GOM2                   Goms:Ernergalen      2439   8.23249  46.42045 661029 141320  1    1  1  1\
+GOM3                    Goms:Galmihorn      2427   8.22855  46.48914 660649 148952  1    1  1  1\
+GUT2                   Guttannen:Homad      2115   8.28969   46.6793 665114 170140  1    1  1  1\
+HIN1                              HIN1      2306   9.30482  47.15333 741517 224167  1    0  1  0\
+HTR1                              HTR1      3040   9.15414  46.53335 731600 155000  1    0  1  0\
+HTR2        Hinterrhein:Alp_Piaenetsch      2147   9.20433  46.54438 735422 156311  1    1  1  1\
+HTR3      Hinterrhein:Unter_Surettasee      2200   9.34852  46.53655 746500 155700  1    0  1  1\
+ILI2         Val_d'Illiez:Les_Collines      2022   6.82778  46.19136 552841 115728  1    1  1  1\
+JAU1                              JAU1      2103   7.26895  46.62968 587005 164285  1    0  1  0\
+JAU2                      Jaun:Fochsen      1707   7.27454  46.63305 587434 164658  1    1  1  1\
+JUL1                              JUL1      2838   9.70289  46.48233 773849 150399  0    0  0  1\
+KES2              Kesch:Porta_d'Es-cha      2727   9.89814  46.62128 788351 166289  1    1  0  1\
+KLO1                              KLO1      2542   9.86849  46.92081 785050 199500  1    0  1  1\
+KLO2                  Klosters:Madrisa      2147   9.87386  46.90911 785499 198213  1    1  1  1\
+LAU2         Lauenen:Truettlisbergpass      1970   7.37986  46.42603 595482 141633  1    1  1  1\
+LHO2            Lauberhorn:Russisprung      2150   7.94374  46.58278 638715 159182  0    1  0  1\
+LUK2                Lukmanier:Lai_Verd      2555   8.78352  46.60415 703037 162315  1    1  1  1\
+MEI2                Meiental:Laucheren      2220   8.55102  46.74376 685005 177555  1    1  1  1\
+MES1                              MES1      2688    9.1557  46.41748 732001 142125  1    0  1  0\
+MES2                Mesocco:Pian_Grand      2384    9.1603  46.41401 732363 141747  1    1  1  1\
+MUN1                              MUN1      2926    7.9167  46.34382 636804 132605  0    0  1  0\
+MUN2                    Mund:Chiematte      2205    7.9252  46.33306 637466 131413  1    1  1  1\
+NAR1                              NAR1      2299   8.86692   46.4651 709707 146973  0    0  0  1\
+NAR2                Nara:Schneestation      2077   8.86864  46.47298 709823 147852  1    1  1  1\
+NEN1                              NEN1      2713   7.35401  46.14313 593461 110186  1    0  1  0\
+OBW1                              OBW1      2733   8.30842  46.54984 666706 155765  1    0  1  0\
+OBW2                  Oberwald:Jostsee      2432   8.31596  46.54522 667290 155257  1    1  1  1\
+OFE2                Ofenpass:Murtaroel      2359  10.28905   46.6317 818233 168460  1    0  1  1\
+ORT2                     Ortstock:Matt      1824   8.95855 46.918077 715769 197452  1    1  1  1\
+PAR2                  Parsenn:Kreuzweg      2290   9.80485  46.85172 780436 191675  1    1  1  1\
+PUZ2            Puzzetta:Schneestation      2196   8.86246  46.62635 709039 164889  1    1  1  1\
+ROA2           Rotschalp:Schneestation      1875   7.99394  46.77431 642412 180499  1    1  1  1\
+SAA1                              SAA1      3245   7.86127  46.16634 632643 112851  0    0  0  1\
+SAA2                       Saas:Seetal      2480   7.87935  46.17183 634036 113469  1    1  1  1\
+SAA3                  Saas:Schwarzmies      2952   7.98138  46.12748 641950 108588  1    1  1  1\
+SCA1                              SCA1      3187   8.73213  46.80725 698728 184824  0    1  0  0\
+SCA2               Schaechental:Seewli      2032   8.71734  46.81295 697589 185439  1    1  1  1\
+SCA3           Schaechental:Alpler_Tor      2338   8.77954  46.89153 702186 194253  1    1  1  1\
+SCB2                Schoenbueel:Bidmer      1777   8.10344  46.77937 650770 181126  1    1  1  0\
+SCH2          Schilthorn:Schneestation      2332   7.83473  46.57691 630363 158481  1    1  1  1\
+SHE2             Sieben_Hengste:Schibe      1852   7.81245  46.74882 628564 177583  1    1  1  0\
+SIM2              Simano:Schneestation      2450   8.98082  46.46745 718450 147400  1    1  1  1\
+SLF2                 SLF:Fluelastrasse      1563   9.84827  46.81277 783879 187447  1    0  1  1\
+SMN2         Samnaun:Ravaischer_Salaas      2512  10.33835  46.95638 820671 204667  1    0  1  1\
+SPN1                              SPN1      2980   8.08138  46.21827 649596 118739  0    0  1  0\
+SPN3                  Simplon:Wenghorn      2424   8.04517  46.17801 646837 114241  1    1  1  1\
+TAM2                 Taminatal:Wildsee      2468   9.39093  46.96836 748557 203769  1    1  1  1\
+TAM3               Taminatal:Schaftali      2166   9.45817  46.89098 753894 195299  1    1  1  1\
+TRU1                              TRU1      3103   7.58062  46.38409 610923 136979  1    0  0  0\
+TRU2         Trubelboden:Schneestation      2459   7.58557  46.37095 611306 135519  0    1  1  0\
+TUJ1                              TUJ1      3028   8.69449  46.68372 696075 171047  1    0  1  0\
+TUJ3                     Tujetsch:Nual      2211   8.74022  46.64703 699641 167025  1    1  1  1\
+TUM1                              TUM1      3041   8.99227  46.78497 718630 182708  1    0  1  0\
+TUM2                   Tumpiv:Val_Miez      2191   9.02147  46.78106 720868 182318  1    1  1  1\
+URS1                              URS1      2784   8.63831  46.66813 691804 169246  1    1  1  1\
+URS2                 Urseren:Giltnasen      2169   8.51386  46.58678 682405 160066  1    1  1  1\
+VAL2           Vallascia:Schneestation      2268   8.61379  46.54903 690126 155980  1    1  1  1\
+VDS1                              VDS1      2696   7.35227  46.30519 593346 128202  1    0  1  0\
+VDS2 Vallee_de_la_Sionne:Donin_du_Jour      2385    7.3675  46.32151 594521 130015  1    1  1  1\
+VIN1                              VIN1      2975  10.44933  46.92879 829230 201920  1    0  1  0\
+VIN2                    Vinadi:Alpetta      2729  10.44286  46.93177 828725 202232  1    0  1  1\
+VLS1                              VLS1      3121   9.12507   46.6228 729156 164893  1    0  1  0\
+VLS2                   Vals:Alp_Calasa      2064   9.20524  46.67441 735166 170764  1    1  1  1\
+WFJ2               Davos:Weissfluhjoch      2536   9.80931  46.82966 780849 189233  1    1  1  1\
+ZER1                              ZER1      3345   7.73632  46.05366 623040 100280  1    0  1  1\
+ZER2               Zermatt:Triftchumme      2752    7.7274  46.04217 622354  99001  1    1  1  1\
+ZER4              Zermatt:Alp_Hermetje      2408   7.70238  45.99799 620434  94082  1    1  1  1\
+ZNZ1                              ZNZ1      3133   9.99762  46.70425 795666 175751  0    0  1  0\
+ZNZ2                Zernez:Puelschezza      2677  10.01884  46.69772 797312 175078  1    1  1  1}

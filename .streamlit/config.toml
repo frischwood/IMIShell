@@ -1,0 +1,15 @@
+[server]
+# Allow connections from any origin (needed for Docker)
+enableCORS = false
+enableXsrfProtection = false
+
+# Server address and port
+headless = true
+address = "0.0.0.0"
+port = 8501
+
+[browser]
+# Don't automatically open browser
+gatherUsageStats = false
+serverAddress = "localhost"
+serverPort = 8501
