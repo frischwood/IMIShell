@@ -82,7 +82,8 @@ Each run writes a self-contained folder:
 
 ```
 output/<run_name>/
-├── io.ini            # generated engine configuration (reproducible)
+├── io.ini            # generated engine configuration (stations, paths, filters)
+├── command.txt       # exact command executed (binary, time frame, sampling rate)
 ├── stations.csv      # selected IMIS stations
 ├── snowfiles/        # one bare-soil .sno per station
 ├── snowfiles_out/    # snowpack engine only: final snow profiles

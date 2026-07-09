@@ -184,6 +184,10 @@ def run_streaming(cmd: List[str], run_dir: Path) -> Iterator[str]:
         cmd: Command as list of arguments
         run_dir: Working directory for the subprocess
     """
+    # Record the exact command: io.ini alone doesn't capture the time frame,
+    # sampling rate or binary, and reruns must be reproducible
+    (Path(run_dir) / "command.txt").write_text(" ".join(cmd) + "\n")
+
     binary = cmd[0]
     if shutil.which(binary) is None and not Path(binary).exists():
         yield f"ERROR: binary not found: {binary}"
