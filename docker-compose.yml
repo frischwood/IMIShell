@@ -7,6 +7,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      # Pin specific MeteoIO/Snowpack versions (tag, branch or commit):
+      # args:
+      #   METEOIO_REF: <tag-or-commit>
+      #   SNOWPACK_REF: <tag-or-commit>
     container_name: imishell
     ports:
       - "8502:8501"

@@ -11,6 +11,12 @@
 # ============================================================
 FROM python:3.11-slim AS builder
 
+# Pin specific MeteoIO/Snowpack versions (tag, branch or commit) at build time:
+#   docker compose build --build-arg METEOIO_REF=<ref> --build-arg SNOWPACK_REF=<ref>
+# Empty = default branch (latest).
+ARG METEOIO_REF=
+ARG SNOWPACK_REF=
+
 RUN apt-get update && apt-get install -y \
     build-essential \
     cmake \
@@ -26,6 +32,7 @@ WORKDIR /tmp/build
 RUN echo "Building MeteoIO from source..." && \
     git clone https://gitlabext.wsl.ch/snow-models/meteoio.git && \
     cd meteoio && \
+    if [ -n "$METEOIO_REF" ]; then git checkout "$METEOIO_REF"; fi && \
     git log -1 --format="MeteoIO_Commit=%H%nMeteoIO_Date=%ci" > /tmp/meteoio_version.txt && \
     mkdir build && \
     cd build && \
@@ -43,6 +50,7 @@ WORKDIR /tmp/build
 RUN echo "Building Snowpack from source..." && \
     git clone https://gitlabext.wsl.ch/snow-models/snowpack.git && \
     cd snowpack && \
+    if [ -n "$SNOWPACK_REF" ]; then git checkout "$SNOWPACK_REF"; fi && \
     git log -1 --format="Snowpack_Commit=%H%nSnowpack_Date=%ci" > /tmp/snowpack_version.txt && \
     mkdir build && \
     cd build && \
