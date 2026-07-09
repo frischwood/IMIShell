@@ -13,7 +13,7 @@ import shutil
 import subprocess
 from datetime import datetime, timedelta
 from pathlib import Path
-from typing import Iterator, List
+from typing import Iterator, List, Optional
 
 import jinja2
 
@@ -133,7 +133,12 @@ def _create_sno_files(stations, sno_dir: Path, template_dir: Path, run_name: str
     logger.info(f"Created {len(stations)} .sno files in {sno_dir}")
 
 
-def build_command(engine: str, start_date: datetime, end_date: datetime) -> List[str]:
+def build_command(
+    engine: str,
+    start_date: datetime,
+    end_date: datetime,
+    binary: Optional[str] = None,
+) -> List[str]:
     """
     Build the engine command line (run with cwd=run_dir).
 
@@ -141,6 +146,8 @@ def build_command(engine: str, start_date: datetime, end_date: datetime) -> List
         engine: "meteoio" or "snowpack"
         start_date: Begin of the time frame
         end_date: End of the time frame
+        binary: Path to the engine binary; defaults to the
+            METEOIO_BIN / SNOWPACK_BIN environment configuration
 
     Returns:
         Command as list of arguments
@@ -150,7 +157,7 @@ def build_command(engine: str, start_date: datetime, end_date: datetime) -> List
     if engine == "meteoio":
         start_str = start_date.strftime('%Y-%m-%dT%H:%M:%S')
         return [
-            get_meteoio_bin(),
+            binary or get_meteoio_bin(),
             "-c", "io.ini",
             "-b", start_str,
             "-e", end_str,
@@ -160,7 +167,7 @@ def build_command(engine: str, start_date: datetime, end_date: datetime) -> List
     # Snowpack needs the first timestep after the .sno profile date (as in A3Dshell)
     start_str = (start_date + timedelta(hours=1)).strftime('%Y-%m-%dT%H:%M:%S')
     return [
-        get_snowpack_bin(),
+        binary or get_snowpack_bin(),
         "-c", "io.ini",
         "-b", start_str,
         "-e", end_str,

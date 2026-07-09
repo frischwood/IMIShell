@@ -17,7 +17,10 @@ import folium
 import streamlit as st
 from streamlit_folium import st_folium
 
-from src.config import get_config_dir, get_imis_dir, get_output_dir, get_template_dir
+from src.config import (
+    get_config_dir, get_imis_dir, get_meteoio_bin, get_output_dir,
+    get_snowpack_bin, get_template_dir,
+)
 from src.imis import IMISManager
 from src.map_utils import create_roi_map, save_drawn_roi
 from src.roi import ROI
@@ -54,6 +57,17 @@ buffer_size = col4.number_input(
 engine = col5.radio("Engine", ["meteoio", "snowpack"],
                     help="meteoio_timeseries downloads/cleans/writes the timeseries; "
                          "snowpack additionally runs the snow model.")
+
+with st.expander("Binaries (use a specific MeteoIO/Snowpack version)"):
+    bin_col1, bin_col2 = st.columns(2)
+    meteoio_bin = bin_col1.text_input(
+        "meteoio_timeseries path", value=get_meteoio_bin(),
+        help="Default from the METEOIO_BIN environment variable."
+    )
+    snowpack_bin = bin_col2.text_input(
+        "snowpack path", value=get_snowpack_bin(),
+        help="Default from the SNOWPACK_BIN environment variable."
+    )
 
 # ------------------------------------------------------------------
 # Map with ROI drawing and station preview
@@ -139,7 +153,8 @@ if st.button("▶️ Start", type="primary", disabled=not can_run):
         output_dir=get_output_dir(),
         template_dir=get_template_dir(),
     )
-    cmd = runner.build_command(engine, start_dt, end_dt)
+    binary = meteoio_bin if engine == "meteoio" else snowpack_bin
+    cmd = runner.build_command(engine, start_dt, end_dt, binary=binary)
 
     st.info(f"Running in `{run_dir}`")
     st.code(" ".join(cmd), language="bash")

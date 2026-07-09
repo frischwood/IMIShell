@@ -51,3 +51,4 @@ output/<run_name>/
 - `input/templates/meteoioConfig.ini` / `spConfig.ini` — processing configuration (filters, resampling, generators, DBO URL). Station IDs, paths and the time frame are injected at run time.
 - `input/imis/` — IMIS station metadata (copied from A3Dshell).
 - Env vars: `METEOIO_BIN`, `SNOWPACK_BIN`, `IMIS_OUTPUT_DIR`, `IMIS_TEMPLATE_DIR`, `IMIS_META_DIR`, `IMIS_CONFIG_DIR`.
+- The binary paths can also be overridden per run in the GUI ("Binaries" expander) — e.g. to point at a specific locally compiled MeteoIO or Snowpack version.
